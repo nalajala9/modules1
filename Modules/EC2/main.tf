@@ -6,7 +6,3 @@ resource "aws_instance" "web1" {
     vpc_security_group_ids = ["${var.sgid}"]
     key_name = var.keyname
     associate_public_ip_address = true
-    tags = {
-      "Name" = "webserver_${count.index+1}"
-    }
-}
