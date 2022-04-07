@@ -7,6 +7,6 @@ resource "aws_instance" "web1" {
     key_name = var.keyname
     associate_public_ip_address = true
     tags = {
-      "Name" = "webserver_${count.index+1}
+      "Name" = "webserver_${count.index+1}"
     }
 }
